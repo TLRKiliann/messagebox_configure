@@ -2,8 +2,14 @@
 # -*- coding:Utf-8 -*-
 
 
+"""
+    Start this app to launch
+    msg_box2.py.
+"""
+
+
 from tkinter import *
-from message_box import *
+from msg_box2 import *
 
 
 msgbox = Tk()
@@ -12,9 +18,13 @@ msgbox.configure(bg='cyan')
 msgbox.geometry('350x350')
 
 def watchMessage():
-	click_me()
+    """
+        Click button to display
+        second window or msg.
+    """
+    click_me()
 
 click = Button(msgbox, text = "click me", command = watchMessage)
 click.pack(padx=20, pady=150)
- 
+
 msgbox.mainloop()
